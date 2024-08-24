@@ -12,7 +12,7 @@
         <h1>YAY! It's BOGO</h1>
     </header>
     <body>
-        <section id="offer">
+        <section class="offer" id="offer-1">
             <p id="offer-banner" class="scalloped-border"><span id="typography" >30%</span><br/><span id="O">O</span><span id="text">ff</span></p>
             <div id="selection">
                 <input type="radio" class="custom-css"/>
@@ -21,8 +21,58 @@
                     <p>$18.00 USD</p>
                 </div>
             </div>
+            <form id="dataForm1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Size</th>
+                            <th>Colour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td># 1</td>
+                            <td>
+                                <select name="row1_col1">
+                                    <option value="Option 1">S</option>
+                                    <option value="Option 2">L</option>
+                                    <option value="Option 3">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="row1_col2">
+                                    <option value="Option 1">Black</option>
+                                    <option value="Option 2">Red</option>
+                                    <option value="Option 3">Green</option>
+                                    <option value="Option 3">Yellow</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td># 2</td>
+                            <td>
+                                <select name="row2_col1">
+                                    <option value="Option 1">S</option>
+                                    <option value="Option 2">L</option>
+                                    <option value="Option 3">XL</option>
+                                    <option value="Option 3">XXL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="row2_col2">
+                                    <option value="Option 1">Black</option>
+                                    <option value="Option 2">Red</option>
+                                    <option value="Option 3">Green</option>
+                                    <option value="Option 3">Yellow</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>   
         </section>
-        <section id="offer">
+        <section class="offer" id="offer-2">
             <p id="offer-banner"><span id="typography">30%</span><br/><span id="O">O</span><span id="text">ff</span></p>
             <div id="selection">
                 <input type="radio"/>
@@ -32,6 +82,56 @@
                 </div>
                 <p id="most-popular">Most Popular</p>
             </div>
+            <form id="dataForm2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Size</th>
+                            <th>Colour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td># 1</td>
+                            <td>
+                                <select name="row1_col1">
+                                    <option value="Option 1">S</option>
+                                    <option value="Option 2">L</option>
+                                    <option value="Option 3">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="row1_col2">
+                                    <option value="Option 1">Black</option>
+                                    <option value="Option 2">Red</option>
+                                    <option value="Option 3">Green</option>
+                                    <option value="Option 3">Yellow</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td># 2</td>
+                            <td>
+                                <select name="row2_col1">
+                                    <option value="Option 1">S</option>
+                                    <option value="Option 2">L</option>
+                                    <option value="Option 3">XL</option>
+                                    <option value="Option 3">XXL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="row2_col2">
+                                    <option value="Option 1">Black</option>
+                                    <option value="Option 2">Red</option>
+                                    <option value="Option 3">Green</option>
+                                    <option value="Option 3">Yellow</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>   
         </section>
         <article id="article">
             <div class="article-selection">
@@ -81,9 +181,10 @@
                                 </td>
                                 <td>
                                     <select name="row2_col2">
-                                        <option value="Option 1">Option 1</option>
-                                        <option value="Option 2">Option 2</option>
-                                        <option value="Option 3">Option 3</option>
+                                        <option value="Option 1">Black</option>
+                                        <option value="Option 2">Red</option>
+                                        <option value="Option 3">Green</option>
+                                        <option value="Option 3">Yellow</option>
                                     </select>
                                 </td>
                             </tr>
@@ -96,8 +197,11 @@
             <p>Free Delivery</p>
             <p>Total : $18<span>.00 USD</span></p>
         </div>
-        <button type="submit">+ Add To Cart</button>
+        <button type="submit"><span id="add">&#43;</span><span> Add To Cart</span></button>
     </body>
+    <footer>
+        Powered By <span>Pumper</span>
+    </footer>
     <script src="./index..js"></script>
 </body>
 </html>

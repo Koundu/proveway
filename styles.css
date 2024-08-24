@@ -11,7 +11,6 @@ body{
     height: 581px;
     margin-top: 80px;
     margin-bottom: auto;
-    gap: 0px;
     opacity: 0px;
     background: #FFFFFF;
     align-items: center;
@@ -26,21 +25,40 @@ body > header >h1{
     line-height: 25.51px;
     text-align: center;
     color: #FF6B82;
+    margin: 0px;
     margin-top: 28px;
-    margin-bottom: 20px;
 }
 
-#offer {
+.offer {
     display: flex;
     width: 342px !important;
-    height: 74px !important;
+    height: 74px;
     gap: 0px;
     opacity: 0px;
     border-radius: 12px;
     border: 1px solid rgba(167, 167, 167, 0.25);
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
+.offer:hover{
+    cursor: pointer;
+}
+.offer > #dataForm1,#dataForm2{
+    position: relative;
+    font-family: 'Inter',sans-serif;
+    font-size: 9.94px;
+    font-weight: 400;
+    line-height: 12.03px;
+    text-align: left;
+    margin-left: 55px;
+    width: max-content;
+    display: none;
+}
+#offer-1:hover{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF6B82;
+}
 #offer-banner {
     background-color: #FF6B82;
     height: 74px !important;
@@ -81,6 +99,7 @@ input[type="radio"]{
     border-radius: 50%;
     background-color: white;
 }
+
 input[type="radio"]:checked{
     appearance: none; /* Remove default styling */
     cursor: pointer;
@@ -100,9 +119,11 @@ input[type="radio"]:hover{
     outline-offset:2px;
     background-color: #FF6B82;    
 }
+
 #selection{
     display: flex;
 }
+
 #selection > #info{
     display: flex;
     flex-direction: column;
@@ -139,6 +160,9 @@ input[type="radio"]:hover{
     border: 1px solid #FF6B82;
     border-radius: 20px;   
 }
+#article:hover{
+    cursor: pointer;
+}
 
 #most-popular{
     font-family: 'Inter',sans-serif;
@@ -164,6 +188,7 @@ input[type="radio"]:hover{
     border-radius: 2px;    
 
 }
+
 #strike-through{
     font-family: 'Inter',sans-serif;
     font-size: 9.94px;
@@ -173,18 +198,22 @@ input[type="radio"]:hover{
     text-decoration: line-through;
     opacity: 0.42;
 }
+
 .article-selection{
     display: flex;
 }
+
 .article-selection > #info {
     margin-top: 20px;
     margin-left: 20px;
 }
+
 .article-selection > #info > p{
     margin: 0px;
 }
 
 #dataForm{
+    position: relative;
     font-family: 'Inter',sans-serif;
     font-size: 9.94px;
     font-weight: 400;
@@ -202,6 +231,7 @@ td > select{
     gap: 0px;
     border-radius: 1.81px 0px 0px 0px;
     border: 0.9px 0px 0px 0px;
+    text-align: center;
 }
 
 
@@ -229,6 +259,7 @@ thead th{
     line-height: 16.94px;
     text-align: left;
 }
+
 #total > p:last-child{
     font-family: 'Inter',sans-serif;
     font-size: 14px;
@@ -249,4 +280,33 @@ button{
     height: 40px;
     color: white;
     background: rgba(255, 107, 130, 1);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
+#add{
+    font-size: 18px;
+}
+button > span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer{
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(212, 212, 212, 1);
+    margin-top: 10px;
+}
+footer > span{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+    color: rgba(255, 44, 49, 1);
+    cursor: pointer;
+}
+
+
