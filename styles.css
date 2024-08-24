@@ -184,17 +184,69 @@ input[type="radio"]:hover{
     margin: 0px;
 }
 
-form{
+#dataForm{
     font-family: 'Inter',sans-serif;
     font-size: 9.94px;
     font-weight: 400;
     line-height: 12.03px;
     text-align: left;
     margin-left: 55px;
+    width: max-content;
 }
 
-th,td{
+td > select{
+    width: 72.3px;
+    height: 25.31px;
+    top: 346.05px;
+    left: 178.44px;
+    gap: 0px;
+    border-radius: 1.81px 0px 0px 0px;
+    border: 0.9px 0px 0px 0px;
+}
+
+
+thead th{
     font-family: 'Inter',sans-serif;
     font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    padding: 8px 12px;
 }
 
+#total{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 127px;
+}
+
+#total > p:first-child{
+    color: rgba(255, 107, 130, 1);
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+}
+#total > p:last-child{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+}
+#total > p:last-child > span{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+}
+
+button{
+    width: 342px;
+    height: 40px;
+    color: white;
+    background: rgba(255, 107, 130, 1);
+}
